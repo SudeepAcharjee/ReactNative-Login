@@ -10,7 +10,7 @@ const Contact = ({ navigation }) => {
 
     const submit = () => {
         if (userName === "Sudeep" && password === "sudeep@123") {
-            navigation.navigate('Home');
+            navigation.navigate('HomeScreen');
         } else {
             Alert.alert('Incorrect Credentials');
         }
