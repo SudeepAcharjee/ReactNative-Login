@@ -4,17 +4,13 @@ import { colors } from "../utils/colors";
 import { fonts } from "../utils/fonts";
 import { useNavigation } from "@react-navigation/native";
 
-const HomeScreen = () => {
- const navigation = useNavigation();
-  
+const Onboard = () => {
+  const navigation = useNavigation();
 
-  const handleLogin = () => {
-    navigation.navigate("LOGIN");
+  const handleHomeScreen = () => {
+    navigation.navigate("HOME");
   };
 
-  const handleSignup = () => {
-    navigation.navigate("SIGNUP");
-  };
   return (
     <View style={styles.container}>
       <Image source={require("../assets/logo.png")} style={styles.logo} />
@@ -22,7 +18,7 @@ const HomeScreen = () => {
       <Text style={styles.title}>Lorem ipsum dolor.</Text>
       <Text style={styles.subTitle}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore 
+        tempor incididunt ut labore et dolore
       </Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
@@ -30,22 +26,16 @@ const HomeScreen = () => {
             styles.loginButtonWrapper,
             { backgroundColor: colors.primary },
           ]}
-          onPress={handleLogin}
+          onPress={handleHomeScreen}
         >
-          <Text style={styles.loginButtonText}>Login</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.loginButtonWrapper]}
-          onPress={handleSignup}
-        >
-          <Text style={styles.signupButtonText}>Sign-up</Text>
+          <Text style={styles.loginButtonText}>Get Started</Text>
         </TouchableOpacity>
       </View>
     </View>
   );
 };
 
-export default HomeScreen;
+export default Onboard;
 
 const styles = StyleSheet.create({
   container: {
@@ -57,9 +47,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: 140,
     marginVertical: 30,
-   marginTop: 150,
-   
-
+    marginTop: 150,
   },
   bannerImage: {
     marginVertical: 20,
@@ -94,15 +82,11 @@ const styles = StyleSheet.create({
   loginButtonWrapper: {
     justifyContent: "center",
     alignItems: "center",
-    width: "50%",
+    width: "100%",
     borderRadius: 98,
   },
   loginButtonText: {
     color: colors.white,
-    fontSize: 18,
-    fontFamily: fonts.SemiBold,
-  },
-  signupButtonText: {
     fontSize: 18,
     fontFamily: fonts.SemiBold,
   },
