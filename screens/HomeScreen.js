@@ -7,10 +7,7 @@ import { setStatusBarNetworkActivityIndicatorVisible } from "expo-status-bar";
 
 const HomeScreen = () => {
  const navigation = useNavigation();
-  lmlmcva
-  \lknklnv
-  setStatusBarNetworkActivityIndicatorVisible
-  klfnvklq
+ 
 
   const handleLogin = () => {
     navigation.navigate("LOGIN");
