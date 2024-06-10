@@ -3,10 +3,14 @@ import React from "react";
 import { colors } from "../utils/colors";
 import { fonts } from "../utils/fonts";
 import { useNavigation } from "@react-navigation/native";
+import { setStatusBarNetworkActivityIndicatorVisible } from "expo-status-bar";
 
 const HomeScreen = () => {
  const navigation = useNavigation();
-  
+  lmlmcva
+  \lknklnv
+  setStatusBarNetworkActivityIndicatorVisible
+  klfnvklq
 
   const handleLogin = () => {
     navigation.navigate("LOGIN");
